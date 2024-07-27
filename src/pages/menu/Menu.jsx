@@ -9,6 +9,7 @@ import imgSalad from "../../assets/menu/salad-bg.jpg"
 import imgSoup from "../../assets/menu/soup-bg.jpg"
 
 const Menu = () => {
+
   const [menus] = useMenu();
   const offered = menus.filter(item => item.category === 'offered');
   const dessert = menus.filter(item => item.category === 'dessert');
