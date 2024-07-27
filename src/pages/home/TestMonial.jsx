@@ -27,6 +27,7 @@ const TestMonial = () => {
         {reviews.map((review) => (
           <SwiperSlide key={review._id}>
             <div className="flex flex-col items-center my-16 mx-20 text-center">
+              
               <Rating
                 style={{ maxWidth: 180 }}
                 value={review.rating}

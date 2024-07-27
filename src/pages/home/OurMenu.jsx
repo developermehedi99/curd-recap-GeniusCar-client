@@ -26,6 +26,9 @@ const OurMenu = () => {
                     ></MenuItem>)
                 }
             </div>
+            <button className="btn btn-outline border-0 border-b-4 mt-6 btn-success">
+            view full menu
+          </button>
         </section>
     );
 };
