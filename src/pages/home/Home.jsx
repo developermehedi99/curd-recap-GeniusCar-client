@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import BistoImgText from "./BistoImgText";
 import CallUs from "./CallUs";
 import CategorySlider from "./CategorySlider";
@@ -10,6 +11,9 @@ import TestMonial from "./TestMonial";
 const Home = () => {
     return (
         <div>
+            <Helmet>
+            <title>Bistro boss || Home</title>
+            </Helmet>
             <Slider></Slider>
             <CategorySlider></CategorySlider>
             <BistoImgText></BistoImgText>
