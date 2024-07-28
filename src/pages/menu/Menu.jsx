@@ -24,7 +24,7 @@ const Menu = () => {
       </Helmet>
       <Cover img={img} title="our menu"></Cover>
       <MenuCategory item={offered}></MenuCategory>
-      <MenuCategory title="Dessert" img={imgDessert} item={dessert}></MenuCategory>
+      <MenuCategory title="dessert" img={imgDessert} item={dessert}></MenuCategory>
       <MenuCategory title="pizza" img={imgPizza} item={pizza}></MenuCategory>
       <MenuCategory title="salad" img={imgSalad} item={salad}></MenuCategory>
       <MenuCategory title="soup" img={imgSoup} item={soup}></MenuCategory>

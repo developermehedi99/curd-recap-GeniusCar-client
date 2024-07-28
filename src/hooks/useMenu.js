@@ -5,7 +5,7 @@ const useMenu =()=>{
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
-        fetch('menu.json')
+        fetch('http://localhost:5000/menu')
         .then(res => res.json())
         .then(data =>{
             setMenus(data);
@@ -16,8 +16,3 @@ const useMenu =()=>{
     return [menus, loading]
 }
 export default useMenu;
-
-// .then(data => {
-        //     const menuItem = data.filter(item => item.category === 'popular');
-        //     setMenus(menuItem);
-        // })
