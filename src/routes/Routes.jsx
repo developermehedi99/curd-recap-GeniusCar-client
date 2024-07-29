@@ -6,6 +6,9 @@ import Home from "../pages/home/Home";
 import ErrorPages from "../pages/errorPages/ErrorPages";
 import Menu from "../pages/menu/Menu";
 import OurShop from "../pages/shop/OurShop";
+import Login from "../pages/authentication/Login";
+import SingUp from "../pages/authentication/SingUp";
+import PrivateRoute from "./PrivateRoute";
   
   export const router = createBrowserRouter([
     {
@@ -23,7 +26,15 @@ import OurShop from "../pages/shop/OurShop";
         },
         {
           path:"/ourShop/:category",
-          element:<OurShop></OurShop>
+          element:<PrivateRoute><OurShop></OurShop></PrivateRoute>
+        },
+        {
+          path:"/login",
+          element:<Login></Login>
+        },
+        {
+          path:"/singUp",
+          element:<SingUp></SingUp>
         }
       ]
     },
